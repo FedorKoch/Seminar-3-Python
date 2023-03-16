@@ -1,0 +1,21 @@
+import random
+print('введите длину списка')
+n = int(input())
+print('введите число')
+x = int(input())
+list_1 = []
+y = 0
+for l in range (n):
+    list_1.append(random.randint(1,100))
+    print(list_1[l])
+for l in range(len(list_1)):
+    if x == list_1[l]:
+        y = y + 1
+def nearest(lst,target):
+    return min(lst, key = lambda x : abs(x - target))
+if y == 0:
+    print('ближайшее число')
+    print(nearest(list_1,x))
+else:
+    print('количество совпадений')
+    print(y)

@@ -2,7 +2,7 @@ import re
 print('введите слово')
 s = input()
 russian = {'[АВЕИНОРСТавеинорст]' : '1', '[ДКЛМПУдклмпу]' : '2', '[БГЁЬЯбгёья]' : '3', '[ЙЫйы]' : '4', '[ЖЗХЦЧжзхцч]' : '5', '[ШЭЮшэю]' : '8', '[ФЩЪфщъ]' : '10'}
-english = {'[AEIOULNSTRaeioulnst]': '1', '[DGdg]': '2', '[BCMPbcmp]': '3', '[FHVWYfhvwy]': '4', 'Kk': '5', '[JXjx]': '8', '[QZqz]': '10'}
+english = {'[AEIOULNSTRaeioulnstr]': '1', '[DGdg]': '2', '[BCMPbcmp]': '3', '[FHVWYfhvwy]': '4', '[Kk]': '5', '[JXjx]': '8', '[QZqz]': '10'}
 def isrus(text):
 	return bool(re.search('[а-яА-Я]', text))
 
